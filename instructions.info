@@ -1,0 +1,48 @@
+1) In the Terminal (i.e. VS Code) execute "npm install"
+2) After installing, execute "npm start"
+	2.1) This will open an web interface "RN Bundler": "http://localhost:19002/"
+	2.2) Wait till "Tunnel ready" shows up, in the console of web app,	
+3) Install "expo" app in the phone
+4) Scan the QR code in the web interface using, "expo"
+	4.1) "LAN" as the connection option
+	4.2) This will open an app interface with a box in between
+	4.3) In the web interface, "Building JavaScript bundle:" will be progressing.
+	4.4) Once it is 100%, it will show a scree with "HomeScreen-Mobile 1st"
+5) 	To stop, "ctrl+c" in terminal.
+
+Using of Android Studio
+1) Install Android Studio: https://developer.android.com/studio
+2) After downloading, run the installer.
+3) A dialog box should pop up. Do not Import Settings, Just Click "Ok"
+4) Click “Next" to go thru the Wizard
+5) Click “Next” to do a Standard install
+6) Choose light or dark theme for your editor and click “Next”
+7) Click “Finish”
+8) You will likely get a dialog box pop and say “HAXM Installation wants to make changes”. 
+   Enter your password and click OK
+9) If you get a “System Extension Blocked” error, follow the prompt to Open 
+   Security Preferences and click “Allow” for “Intel Corporation Apps”
+10) Once the HAXM installer finished you should get a dialog box from Android Studio.
+
+# Android Simulator
+1) At bottom of the screen click on "Configure", select “AVD Manager”
+2) Creating a new Virtual Device
+	2.1) Click “Create New Virtual Device”
+	2.2) Select a Device from the list and click “Next”
+	2.3) If the System Image for the most recent SDK is not installed, you will need to click the "Download" link next to the SDK version.
+	2.4) After the image has been downloaded, click “Next”
+	2.5) Preview the settings and then click “Finish”
+	2.6) You should see the newly created device in the “Your Virtual Device” screen.
+3) Running the simulator
+	3.1) Click the Play ▶️button all the way to the right in the "Actions" column.
+	3.2) This will open an Android simulator on your machine. If everything is working well, 
+	     it should load a generic screen with a few apps.
+	3.3) Go to your terminal and in your React Native project directory, run npm start
+	3.4) web interface "RN Bundler" opens up in your browser, click on the option 
+	     to “Run on Android simulator”
+	3.5) If you navigate back to your Android simulator you might see 
+	     a “Permit Drawing Over Other Apps” message. Click the OK button and 
+		 it should take you to the system settings screen to enable this. 
+		 You will likely have to go back to the Metro Bundler and select “Run on Android simulator” again.
+	3.6) This will launch the Expo application in the simulated device and run your bundled code. 
+	     Eventually, it should load the “Hi There!” screen.
