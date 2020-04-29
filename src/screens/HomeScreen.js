@@ -37,6 +37,13 @@ const HomeScreen = ({navigation}) => {
       >
         <Text>Go to List Demo[TchOpa]</Text>
       </TouchableOpacity>
+      <Button
+        onPress={() => {
+          console.log("Button Pressed > Navigating to Image Screen");
+          navigation.navigate("ImageScreen"); // here it refers to the "ImageScreen" screen specified at "App.js"
+        }}
+        title="Go to ImageScreen[Btn]"
+      />      
     </View>
   );
 };
