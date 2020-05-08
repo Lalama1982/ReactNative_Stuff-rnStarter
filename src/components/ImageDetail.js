@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 
-// const ImageDetail = ({imageSource, title, score}) => {  :: also could be used
+// const ImageDetail = ({imageSource, title, score}) => {  INFO: also could be used
 const ImageDetail = (props) => {
   // from "ImageScreen.js", "title" attribute is set and added to the prop.
   // For hard-coded calling, <Image source={require('../../assets/beach.jpg')} />

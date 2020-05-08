@@ -44,6 +44,48 @@ const HomeScreen = ({navigation}) => {
         }}
         title="Go to ImageScreen[Btn]"
       />      
+      <Button
+        onPress={() => {
+          console.log("Button Pressed > Navigating to Counter Screen");
+          navigation.navigate("Counter"); // here it refers to the "ImageScreen" screen specified at "App.js"
+        }}
+        title="Go to CounterScreen[Btn]"
+      />  
+      <Button
+        onPress={() => {
+          console.log("Button Pressed > Navigating to Counter Screen with Reducer");
+          navigation.navigate("CounterReducer"); // here it refers to the "ImageScreen" screen specified at "App.js"
+        }}
+        title="Go to CounterScreen with Reducer[Btn]"
+      />                  
+      <Button
+        onPress={() => {
+          console.log("Button Pressed > Navigating to Color Screen");
+          navigation.navigate("Color"); // here it refers to the "ImageScreen" screen specified at "App.js"
+        }}
+        title="Go to ColorScreen[Btn]"
+      />  
+      <Button
+        onPress={() => {
+          console.log("Button Pressed > Navigating to Square Screen");
+          navigation.navigate("Square"); // here it refers to the "ImageScreen" screen specified at "App.js"
+        }}
+        title="Go to SquareScreen[Btn]"
+      /> 
+      <Button
+        onPress={() => {
+          console.log("Button Pressed > Navigating to Square Screen using Reducer");
+          navigation.navigate("SquareReducer"); // here it refers to the "ImageScreen" screen specified at "App.js"
+        }}
+        title="Go to SquareScreen with Reducer[Btn]"
+      />    
+      <Button
+        onPress={() => {
+          console.log("Button Pressed > Navigating to Text Screen");
+          navigation.navigate("Text"); // here it refers to the "ImageScreen" screen specified at "App.js"
+        }}
+        title="Go to TextScreen[Btn]"
+      />                                    
     </View>
   );
 };

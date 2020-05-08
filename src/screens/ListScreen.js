@@ -29,7 +29,7 @@ const ListScreen = () => {
             showsHorizontalScrollIndicator = {false}
             keyExtractor={friend => friend.name} // If keys are set at array, from this code it get overriden.
             data={friends} 
-            // Composition of "element" => {item: {name: 'Friend #1}, index:0}
+            // Composition of "element" => {item: {name: "Friend #1"},{age: "18"}, index:0}
             // ... hence use of "item" below
             renderItem={({item}) => {
                 return <Text style={styles.textStyle}>{item.name} - Age {item.age}</Text>

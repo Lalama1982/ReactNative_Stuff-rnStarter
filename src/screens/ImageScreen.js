@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
-import ImageDetail from "../components/ImageDetail";
+import ImageDetail from "../components/ImageDetail"; // importing the bolier plate to reuse
 
 const ImageScreen = () => {
   return (
